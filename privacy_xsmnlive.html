@@ -82,17 +82,16 @@
       <li><b>Dữ liệu kỹ thuật</b>: mã cài đặt ứng dụng (Firebase Installations), địa chỉ IP khi kết nối máy chủ, kết quả
       kiểm tra ứng dụng/thiết bị chính hãng (Firebase App Check — Play Integrity, App Attest/DeviceCheck) và cấu hình tải
       từ máy chủ (Firebase Remote Config).</li>
-      <li><b>Tài khoản đăng nhập (nếu bạn chọn đăng nhập bằng Google/Apple)</b>: địa chỉ email và mã tài khoản do
-      Google/Apple cung cấp, dùng để giữ gói VIP và số yêu thích khi đổi máy.</li>
       <li><b>Số vé bạn dò</b>: 10 vé dò gần nhất (số vé, ngày, đài) chỉ lưu trên máy để bạn dò lại nhanh; không gửi lên máy chủ. Bạn xóa được ngay tại màn Dò vé.</li>
-      <li><b>Số yêu thích</b>: các số bạn chọn theo dõi; lưu trên máy, và lưu trên máy chủ khi bạn đăng nhập.</li>
+      <li><b>Số yêu thích</b>: các số bạn chọn theo dõi; chỉ lưu trên máy.</li>
       <li><b>Dữ liệu sử dụng và báo lỗi — chỉ khi bạn đồng ý</b> (Firebase Analytics, Firebase Crashlytics): màn hình đã
       mở, thao tác như chia sẻ ảnh, loại thiết bị, phiên bản hệ điều hành, khu vực ước lượng từ địa chỉ IP, thông tin lỗi.
       Ứng dụng hỏi ý kiến bạn ở lần mở đầu tiên và không thu thập nếu bạn không đồng ý. Đổi lựa chọn tại
       <i>tab Cá nhân → Quyền riêng tư</i>.</li>
-      <li><b>Thông báo (chỉ khi bạn bật)</b>: mã thiết bị (Firebase Cloud Messaging) để gửi thông báo kết quả của các đài bạn chọn (mỗi đài 1 thông báo), và — nếu bạn dùng gói VIP và bật "Báo khi số
-      yêu thích về" — thông báo khi số yêu thích của bạn về (mỗi ngày tối đa 1 thông báo cho mỗi số). Máy đăng ký nhận
-      theo nhóm đài / nhóm số; danh sách đài và số yêu thích được lưu trên máy, và lưu trên máy chủ khi bạn đăng nhập. Ứng dụng
+      <li><b>Thông báo (chỉ khi bạn bật)</b>: mã thiết bị (Firebase Cloud Messaging) để gửi thông báo của các đài bạn chọn (mỗi ngày quay: 1 thông báo lúc bắt đầu quay — tắt riêng được — và 1 thông báo khi
+      đã có đủ kết quả), và — nếu bạn dùng gói VIP và bật "Báo khi số yêu thích xuất hiện" — thông báo khi số yêu thích của
+      bạn có trong kết quả (mỗi ngày tối đa 1 thông báo cho mỗi số). Máy đăng ký nhận theo nhóm đài / nhóm số; danh sách đài
+      và số yêu thích chỉ lưu trên máy. Ứng dụng
       không tạo mã này cho tới khi bạn bật thông báo; khi bạn tắt, mã bị hủy.</li>
       <li><b>Quảng cáo</b> (Google AdMob, bản miễn phí): ứng dụng chỉ yêu cầu quảng cáo <b>không cá nhân hóa</b> (không
       dựa trên sở thích hay lịch sử của bạn). AdMob vẫn có thể dùng mã quảng cáo của thiết bị và địa chỉ IP để hiển thị,
@@ -115,8 +114,8 @@
 
     <h2>4. Bên thứ ba xử lý dữ liệu</h2>
     <p>Dữ liệu được xử lý bởi các nhà cung cấp dịch vụ: Google (Firebase, AdMob), Apple và Google (cửa hàng ứng dụng).
-    Cơ sở dữ liệu kết quả, số yêu thích và máy chủ xử lý của ứng dụng đặt tại Singapore (Google Cloud, asia-southeast1).
-    Các dịch vụ khác của Google (Analytics, Crashlytics, đăng nhập, thông báo, Remote Config, App Check) có thể xử lý dữ
+    Cơ sở dữ liệu kết quả, trạng thái gói VIP và máy chủ xử lý của ứng dụng đặt tại Singapore (Google Cloud, asia-southeast1).
+    Các dịch vụ khác của Google (Analytics, Crashlytics, xác thực tài khoản ẩn danh, thông báo, Remote Config, App Check) có thể xử lý dữ
     liệu tại Hoa Kỳ và các quốc gia khác. Vì vậy dữ liệu của bạn có thể được chuyển ra ngoài lãnh thổ Việt Nam; các nhà
     cung cấp này áp dụng biện pháp bảo mật theo tiêu chuẩn của họ. Chúng tôi không bán dữ liệu cá nhân của bạn.</p>
 
