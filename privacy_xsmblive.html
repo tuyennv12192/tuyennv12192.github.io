@@ -64,7 +64,7 @@
 <header>
   <div class="khung">
     <h1>Chính sách quyền riêng tư</h1>
-    <p>Ứng dụng XSMB Live — kết quả xổ số miền Bắc · Cập nhật lần cuối: 03/11/2026</p>
+    <p>Ứng dụng XSMB Live — kết quả xổ số miền Bắc · Cập nhật lần cuối: 05/11/2026</p>
   </div>
 </header>
 <main>
@@ -82,9 +82,7 @@
       <li><b>Dữ liệu kỹ thuật</b>: mã cài đặt ứng dụng (Firebase Installations), địa chỉ IP khi kết nối máy chủ, kết quả
       kiểm tra ứng dụng/thiết bị chính hãng (Firebase App Check — Play Integrity, App Attest/DeviceCheck) và cấu hình tải
       từ máy chủ (Firebase Remote Config).</li>
-      <li><b>Tài khoản đăng nhập (nếu bạn chọn đăng nhập bằng Google/Apple)</b>: địa chỉ email và mã tài khoản do
-      Google/Apple cung cấp, dùng để giữ gói VIP và số yêu thích khi đổi máy.</li>
-      <li><b>Số yêu thích</b>: các số bạn chọn theo dõi; lưu trên máy, và lưu trên máy chủ khi bạn đăng nhập.</li>
+      <li><b>Số yêu thích</b>: các số bạn chọn theo dõi; chỉ lưu trên máy của bạn, không gửi lên máy chủ.</li>
       <li><b>Dữ liệu sử dụng và báo lỗi — chỉ khi bạn đồng ý</b> (Firebase Analytics, Firebase Crashlytics): màn hình đã
       mở, thao tác như chia sẻ ảnh, loại thiết bị, phiên bản hệ điều hành, khu vực ước lượng từ địa chỉ IP, thông tin lỗi.
       Ứng dụng hỏi ý kiến bạn ở lần mở đầu tiên và không thu thập nếu bạn không đồng ý. Đổi lựa chọn tại
@@ -96,7 +94,9 @@
       giới hạn tần suất, đo lường và chống gian lận quảng cáo. Bạn có thể đặt lại hoặc xóa mã này trong cài đặt của điện
       thoại. Người dùng gói VIP không thấy quảng cáo.</li>
       <li><b>Giao dịch mua gói VIP</b>: được xử lý bởi App Store / Google Play; máy chủ của ứng dụng (Firebase) xác minh
-      giao dịch với Apple / Google để mở gói cho bạn. Chúng tôi <b>không</b> nhận và không lưu thông tin thẻ thanh toán.</li>
+      giao dịch với Apple / Google để mở gói cho bạn, rồi lưu trạng thái gói (loại gói, hạn dùng, mã giao dịch của cửa
+      hàng) gắn với mã tài khoản ở trên. Không cần đăng ký hay đăng nhập: trên máy mới, dùng "Khôi phục giao dịch" để lấy
+      lại gói. Chúng tôi <b>không</b> nhận và không lưu thông tin thẻ thanh toán.</li>
     </ul>
     <p>Chúng tôi không thu thập vị trí chính xác (GPS), danh bạ, ảnh hay tin nhắn của bạn. Ảnh bạn chia sẻ từ ứng dụng chỉ
     được tạo trên máy và gửi đi theo lựa chọn của bạn.</p>
@@ -111,14 +111,14 @@
 
     <h2>4. Bên thứ ba xử lý dữ liệu</h2>
     <p>Dữ liệu được xử lý bởi các nhà cung cấp dịch vụ: Google (Firebase, AdMob), Apple và Google (cửa hàng ứng dụng).
-    Cơ sở dữ liệu kết quả, số yêu thích và máy chủ xử lý của ứng dụng đặt tại Singapore (Google Cloud, asia-southeast1).
-    Các dịch vụ khác của Google (Analytics, Crashlytics, đăng nhập, thông báo, Remote Config, App Check) có thể xử lý dữ
+    Cơ sở dữ liệu kết quả, trạng thái gói VIP và máy chủ xử lý của ứng dụng đặt tại Singapore (Google Cloud, asia-southeast1).
+    Các dịch vụ khác của Google (Analytics, Crashlytics, xác thực tài khoản ẩn danh, thông báo, Remote Config, App Check) có thể xử lý dữ
     liệu tại Hoa Kỳ và các quốc gia khác. Vì vậy dữ liệu của bạn có thể được chuyển ra ngoài lãnh thổ Việt Nam; các nhà
     cung cấp này áp dụng biện pháp bảo mật theo tiêu chuẩn của họ. Chúng tôi không bán dữ liệu cá nhân của bạn.</p>
 
     <h2>5. Thời gian lưu trữ</h2>
     <p>Việc xử lý bắt đầu khi bạn cài và mở ứng dụng, và kết thúc khi bạn xóa dữ liệu, gỡ ứng dụng hoặc rút lại đồng ý.
-    Mã tài khoản và số yêu thích được lưu tới khi bạn xóa. Dữ liệu sử dụng được lưu tối đa 14 tháng (Analytics), báo lỗi
+    Mã tài khoản và trạng thái gói VIP được lưu tới khi bạn xóa. Dữ liệu sử dụng được lưu tối đa 14 tháng (Analytics), báo lỗi
     tối đa 90 ngày (Crashlytics).</p>
 
     <h2>6. Quyền của bạn</h2>
