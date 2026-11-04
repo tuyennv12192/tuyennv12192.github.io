@@ -82,17 +82,15 @@
       <li><b>Dữ liệu kỹ thuật</b>: mã cài đặt ứng dụng (Firebase Installations), địa chỉ IP khi kết nối máy chủ, kết quả
       kiểm tra ứng dụng/thiết bị chính hãng (Firebase App Check — Play Integrity, App Attest/DeviceCheck) và cấu hình tải
       từ máy chủ (Firebase Remote Config).</li>
-      <li><b>Tài khoản đăng nhập (nếu bạn chọn đăng nhập bằng Google/Apple)</b>: địa chỉ email, mã tài khoản và — nếu
-      Google/Apple gửi kèm — tên, ảnh đại diện, dùng để giữ gói VIP, số yêu thích và các tỉnh nhận thông báo khi đổi máy.</li>
       <li><b>Số vé bạn dò</b>: 10 vé dò gần nhất (số vé, ngày, đài) chỉ lưu trên máy để bạn dò lại nhanh; không gửi lên máy chủ. Bạn xóa được ngay tại màn Dò vé.</li>
-      <li><b>Số yêu thích</b>: các số bạn chọn theo dõi; lưu trên máy, và lưu trên máy chủ khi bạn đăng nhập.</li>
+      <li><b>Số yêu thích</b>: các số bạn chọn theo dõi; chỉ lưu trên máy.</li>
       <li><b>Dữ liệu sử dụng và báo lỗi — chỉ khi bạn đồng ý</b> (Firebase Analytics, Firebase Crashlytics): màn hình đã
       mở, thao tác như chia sẻ ảnh, loại thiết bị, phiên bản hệ điều hành, khu vực ước lượng từ địa chỉ IP, thông tin lỗi.
       Ứng dụng hỏi ý kiến bạn ở lần mở đầu tiên và không thu thập nếu bạn không đồng ý. Đổi lựa chọn tại
       <i>tab Cá nhân → Quyền riêng tư</i>.</li>
       <li><b>Thông báo (chỉ khi bạn bật)</b>: mã thiết bị (Firebase Cloud Messaging) để gửi thông báo kết quả của các tỉnh bạn chọn (lúc bắt đầu quay và khi có đủ kết quả), và — nếu bạn dùng gói VIP và bật "Báo khi số
       yêu thích về" — thông báo khi số yêu thích của bạn về (mỗi ngày tối đa 1 thông báo cho mỗi số). Máy đăng ký nhận
-      theo nhóm tỉnh / nhóm số; danh sách tỉnh và số yêu thích được lưu trên máy, và lưu trên máy chủ khi bạn đăng nhập. Ứng dụng
+      theo nhóm tỉnh / nhóm số; danh sách tỉnh và số yêu thích chỉ được lưu trên máy. Ứng dụng
       không tạo mã này cho tới khi bạn bật thông báo; khi bạn tắt, mã bị hủy.</li>
       <li><b>Quảng cáo</b> (Google AdMob, bản miễn phí): ứng dụng chỉ yêu cầu quảng cáo <b>không cá nhân hóa</b> (không
       dựa trên sở thích hay lịch sử của bạn). AdMob vẫn có thể dùng mã quảng cáo của thiết bị và địa chỉ IP để hiển thị,
@@ -115,14 +113,14 @@
 
     <h2>4. Bên thứ ba xử lý dữ liệu</h2>
     <p>Dữ liệu được xử lý bởi các nhà cung cấp dịch vụ: Google (Firebase, AdMob), Apple và Google (cửa hàng ứng dụng).
-    Cơ sở dữ liệu kết quả, số yêu thích và máy chủ xử lý của ứng dụng đặt tại Singapore (Google Cloud, asia-southeast1).
-    Các dịch vụ khác của Google (Analytics, Crashlytics, đăng nhập, thông báo, Remote Config, App Check) có thể xử lý dữ
+    Cơ sở dữ liệu kết quả, trạng thái gói VIP và máy chủ xử lý của ứng dụng đặt tại Singapore (Google Cloud, asia-southeast1).
+    Các dịch vụ khác của Google (Analytics, Crashlytics, tài khoản Firebase Authentication, thông báo, Remote Config, App Check) có thể xử lý dữ
     liệu tại Hoa Kỳ và các quốc gia khác. Vì vậy dữ liệu của bạn có thể được chuyển ra ngoài lãnh thổ Việt Nam; các nhà
     cung cấp này áp dụng biện pháp bảo mật theo tiêu chuẩn của họ. Chúng tôi không bán dữ liệu cá nhân của bạn.</p>
 
     <h2>5. Thời gian lưu trữ</h2>
     <p>Việc xử lý bắt đầu khi bạn cài và mở ứng dụng, và kết thúc khi bạn xóa dữ liệu, gỡ ứng dụng hoặc rút lại đồng ý.
-    Mã tài khoản, số yêu thích và các tỉnh nhận thông báo (khi bạn đăng nhập) được lưu tới khi bạn xóa. Thông tin giao
+    Mã tài khoản được lưu tới khi bạn xóa; dữ liệu chỉ lưu trên máy mất khi bạn xóa dữ liệu hoặc gỡ ứng dụng. Thông tin giao
     dịch gói VIP (mã giao dịch, loại gói, hạn dùng) được lưu để xử lý gia hạn, hoàn tiền và khôi phục giao dịch; khi bạn
     xóa dữ liệu, mã tài khoản của bạn được gỡ khỏi giao dịch. Dữ liệu sử dụng được lưu tối đa 14 tháng (Analytics), báo
     lỗi tối đa 90 ngày (Crashlytics).</p>
@@ -133,8 +131,7 @@
     <ul>
       <li><b>Xóa ngay trong ứng dụng</b>: <i>tab Cá nhân → Thông tin hỗ trợ → Xóa dữ liệu của tôi</i> — xóa tài
       khoản, trạng thái gói VIP gắn với tài khoản, số yêu thích, các tỉnh nhận thông báo, vé dò gần đây, lựa chọn quyền
-      riêng tư và hủy đăng ký nhận thông báo của bạn trên máy chủ và trên máy; nếu bạn đã đăng nhập bằng Apple, ứng dụng
-      thu hồi quyền đăng nhập Apple đã cấp. Gói VIP đã mua vẫn thuộc tài khoản App Store / Google Play của bạn:
+      riêng tư và hủy đăng ký nhận thông báo của bạn trên máy chủ và trên máy. Gói VIP đã mua vẫn thuộc tài khoản App Store / Google Play của bạn:
       dùng "Khôi phục giao dịch" để dùng tiếp.</li>
       <li><b>Tắt thông báo</b>: <i>tab Cá nhân → Thông báo</i>; khi tắt, mã thông báo của máy bị hủy.</li>
       <li><b>Rút lại đồng ý thu thập dữ liệu sử dụng</b>: tắt công tắc ở mục Quyền riêng tư; báo lỗi chưa gửi trên máy
