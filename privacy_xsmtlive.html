@@ -83,6 +83,12 @@
       kiểm tra ứng dụng/thiết bị chính hãng (Firebase App Check — Play Integrity, App Attest/DeviceCheck) và cấu hình tải
       từ máy chủ (Firebase Remote Config).</li>
       <li><b>Số vé bạn dò</b>: 10 vé dò gần nhất (số vé, ngày, đài) chỉ lưu trên máy để bạn dò lại nhanh; không gửi lên máy chủ. Bạn xóa được ngay tại màn Dò vé.</li>
+      <li><b>Theo dõi trên màn hình khoá (iPhone, chỉ khi bạn bật)</b>: mã thiết bị (Firebase Cloud Messaging) và mã Live
+      Activity của máy được lưu trên máy chủ để cập nhật số đang quay lên màn hình khoá / Dynamic Island. Tính năng này
+      mặc định tắt; mã bị xóa khi bạn tắt tính năng, xóa dữ liệu, hoặc tự hết hạn sau 30 ngày không mở ứng dụng.</li>
+      <li><b>Ảnh vé khi bạn dùng "Quét vé"</b>: ảnh bạn chụp hoặc chọn chỉ được xử lý ngay trên máy để đọc số vé, ngày và
+      tỉnh, rồi bị xóa; không lưu và không gửi đi đâu. Ứng dụng chỉ dùng camera / thư viện ảnh khi bạn bấm quét vé.</li>
+      <li><b>Đọc kết quả bằng giọng nói</b>: dùng giọng đọc có sẵn của máy; không thu âm, không gửi dữ liệu đi.</li>
       <li><b>Số yêu thích</b>: các số bạn chọn theo dõi; chỉ lưu trên máy.</li>
       <li><b>Dữ liệu sử dụng và báo lỗi — chỉ khi bạn đồng ý</b> (Firebase Analytics, Firebase Crashlytics): màn hình đã
       mở, thao tác như chia sẻ ảnh, loại thiết bị, phiên bản hệ điều hành, khu vực ước lượng từ địa chỉ IP, thông tin lỗi.
