@@ -88,7 +88,13 @@
       Ứng dụng hỏi ý kiến bạn ở lần mở đầu tiên và không thu thập nếu bạn không đồng ý. Đổi lựa chọn tại
       <i>tab VIP (Cá nhân) → Quyền riêng tư</i>.</li>
       <li><b>Thông báo (chỉ khi bạn bật)</b>: mã thiết bị (Firebase Cloud Messaging) để gửi thông báo kết quả. Ứng dụng
-      không tạo mã này cho tới khi bạn bật thông báo; khi bạn tắt, mã bị hủy.</li>
+      không tạo mã này cho tới khi bạn bật thông báo (hoặc khi số đang quay hiện trên màn hình khoá, xem mục dưới); khi
+      bạn tắt, mã bị hủy.</li>
+      <li><b>Theo dõi trên màn hình khoá (Hoạt động trực tiếp, iPhone)</b>: khi số đang quay hiện trên màn hình khoá,
+      ứng dụng gửi lên máy chủ mã thiết bị và mã của Hoạt động trực tiếp, gắn với mã tài khoản ẩn danh của máy, chỉ để
+      cập nhật số trong lúc quay. Nếu bạn bật cả thông báo và “Nhắc khi bắt đầu quay”, ứng dụng gửi thêm mã để máy chủ tự
+      hiện số lúc bắt đầu quay. Tắt “Theo dõi trên màn hình khoá” thì các mã này bị gỡ khỏi máy chủ. Widget và Phím tắt
+      chỉ tải kết quả công khai, không gửi dữ liệu nào về bạn.</li>
       <li><b>Quảng cáo</b> (Google AdMob, bản miễn phí): ứng dụng chỉ yêu cầu quảng cáo <b>không cá nhân hóa</b> (không
       dựa trên sở thích hay lịch sử của bạn). AdMob vẫn có thể dùng mã quảng cáo của thiết bị và địa chỉ IP để hiển thị,
       giới hạn tần suất, đo lường và chống gian lận quảng cáo. Bạn có thể đặt lại hoặc xóa mã này trong cài đặt của điện
@@ -127,7 +133,8 @@
     <ul>
       <li><b>Xóa ngay trong ứng dụng</b>: <i>tab VIP (Cá nhân) → Thông tin hỗ trợ → Xóa dữ liệu của tôi</i> — xóa tài
       khoản, số yêu thích, lựa chọn quyền riêng tư và hủy đăng ký nhận thông báo của bạn trên máy chủ và trên máy.</li>
-      <li><b>Tắt thông báo</b>: <i>tab VIP (Cá nhân) → Thông báo</i>; khi tắt, mã thông báo của máy bị hủy.</li>
+      <li><b>Tắt thông báo</b>: <i>tab VIP (Cá nhân) → Thông báo</i>; khi tắt, mã thông báo của máy bị hủy. Tắt “Theo dõi
+      trên màn hình khoá” cũng ở mục này.</li>
       <li><b>Rút lại đồng ý thu thập dữ liệu sử dụng</b>: tắt công tắc ở mục Quyền riêng tư; báo lỗi chưa gửi trên máy
       cũng bị xóa.</li>
       <li><b>Qua email</b>: gửi tới <a href="mailto:shinhagun1@gmail.com">shinhagun1@gmail.com</a> kèm <i>Mã hỗ trợ</i> hiển thị ở mục Thông
