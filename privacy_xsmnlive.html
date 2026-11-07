@@ -64,7 +64,7 @@
 <header>
   <div class="khung">
     <h1>Chính sách quyền riêng tư</h1>
-    <p>Ứng dụng XSMN Live — kết quả xổ số miền Nam · Cập nhật lần cuối: 04/11/2026</p>
+    <p>Ứng dụng XSMN Live — kết quả xổ số miền Nam · Cập nhật lần cuối: 06/11/2026</p>
   </div>
 </header>
 <main>
@@ -83,6 +83,11 @@
       kiểm tra ứng dụng/thiết bị chính hãng (Firebase App Check — Play Integrity, App Attest/DeviceCheck) và cấu hình tải
       từ máy chủ (Firebase Remote Config).</li>
       <li><b>Số vé bạn dò</b>: 10 vé dò gần nhất (số vé, ngày, đài) chỉ lưu trên máy để bạn dò lại nhanh; không gửi lên máy chủ. Bạn xóa được ngay tại màn Dò vé.</li>
+      <li><b>Ví vé</b>: các vé bạn lưu (số vé, đài, ngày quay, số tờ, ghi chú, đã lĩnh thưởng hay chưa) chỉ lưu trên máy;
+      không gửi lên máy chủ. Ứng dụng dò vé ngay trên máy. Trên iPhone, một bản rút gọn của ví (số vé, đài, ngày quay, số
+      tờ; không có ghi chú) được lưu trong vùng dữ liệu dùng chung giữa ứng dụng và tiện ích thông báo của chính ứng dụng
+      (App Group) để tiện ích dò vé khi thông báo kết quả tới. Nhắc hạn lĩnh thưởng là thông báo hẹn giờ do ứng dụng đặt
+      trên máy, không qua máy chủ. Bạn xóa từng vé trong Ví vé hoặc xóa tất cả bằng "Xóa dữ liệu của tôi".</li>
       <li><b>Số yêu thích</b>: các số bạn chọn theo dõi; chỉ lưu trên máy.</li>
       <li><b>Dữ liệu sử dụng và báo lỗi — chỉ khi bạn đồng ý</b> (Firebase Analytics, Firebase Crashlytics): màn hình đã
       mở, thao tác như chia sẻ ảnh, loại thiết bị, phiên bản hệ điều hành, khu vực ước lượng từ địa chỉ IP, thông tin lỗi.
@@ -91,7 +96,8 @@
       <li><b>Thông báo (chỉ khi bạn bật)</b>: mã thiết bị (Firebase Cloud Messaging) để gửi thông báo của các đài bạn chọn (mỗi ngày quay: 1 thông báo lúc bắt đầu quay — tắt riêng được — và 1 thông báo khi
       đã có đủ kết quả), và — nếu bạn dùng gói VIP và bật "Báo khi số yêu thích xuất hiện" — thông báo khi số yêu thích của
       bạn có trong kết quả (mỗi ngày tối đa 1 thông báo cho mỗi số). Máy đăng ký nhận theo nhóm đài / nhóm số; danh sách đài
-      và số yêu thích chỉ lưu trên máy. Ứng dụng
+      và số yêu thích chỉ lưu trên máy. Thông báo đủ kết quả mang kết quả của các đài trong ngày (giống nhau cho mọi người
+      nhận); máy của bạn tự dò các vé trong Ví vé và thêm một dòng vào thông báo — vé của bạn không được gửi đi. Ứng dụng
       không tạo mã này cho tới khi bạn bật thông báo; khi bạn tắt, mã bị hủy.</li>
       <li><b>Quảng cáo</b> (Google AdMob, bản miễn phí): ứng dụng chỉ yêu cầu quảng cáo <b>không cá nhân hóa</b> (không
       dựa trên sở thích hay lịch sử của bạn). AdMob vẫn có thể dùng mã quảng cáo của thiết bị và địa chỉ IP để hiển thị,
@@ -106,7 +112,7 @@
 
     <h2>3. Mục đích sử dụng</h2>
     <ul>
-      <li>Cung cấp kết quả xổ số theo ngày và theo đài, lịch sử, thống kê và dò vé; giữ gói VIP và số yêu thích của bạn.</li>
+      <li>Cung cấp kết quả xổ số theo ngày và theo đài, lịch sử, thống kê, dò vé và Ví vé (tự dò vé đã lưu, nhắc hạn lĩnh thưởng); giữ gói VIP và số yêu thích của bạn.</li>
       <li>Gửi thông báo bạn đã bật.</li>
       <li>Phát hiện, sửa lỗi và cải thiện ứng dụng (dữ liệu sử dụng và báo lỗi, chỉ khi bạn đồng ý).</li>
       <li>Hiển thị quảng cáo không cá nhân hóa cho người dùng bản miễn phí.</li>
@@ -129,7 +135,7 @@
     lý, và khiếu nại theo pháp luật về bảo vệ dữ liệu cá nhân.</p>
     <ul>
       <li><b>Xóa ngay trong ứng dụng</b>: <i>tab Cá nhân → Thông tin hỗ trợ → Xóa dữ liệu của tôi</i> — xóa tài
-      khoản, trạng thái gói VIP gắn với tài khoản, số yêu thích, vé dò gần đây, lựa chọn quyền riêng tư và hủy đăng ký
+      khoản, trạng thái gói VIP gắn với tài khoản, số yêu thích, vé dò gần đây, Ví vé (kể cả bản rút gọn cho tiện ích thông báo và các lời nhắc đã hẹn), lựa chọn quyền riêng tư và hủy đăng ký
       nhận thông báo của bạn trên máy chủ và trên máy. Gói VIP đã mua vẫn thuộc tài khoản App Store / Google Play của bạn:
       dùng "Khôi phục giao dịch" để dùng tiếp.</li>
       <li><b>Tắt thông báo</b>: <i>tab Cá nhân → Thông báo</i>; khi tắt, mã thông báo của máy bị hủy.</li>
